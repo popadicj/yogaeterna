@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+#about { background-color: #fff8f5; padding: 30px 10px;}
+#class { background-color: #ffffff; padding: 30px 0;}
+#team { background-color: #fff8f5; padding: 30px 0;}
+#contact{ padding: 30px 0;}
+#footer{padding: 20px 10px;}
+.nav-link.active{
+    color:#641e16 !important;
+}
+.custome-color{
+    color:#641e16;
+}
+.custom-bg{
+    background-color: white;
+}
+.red-bg{
+    background-color: #641e16;
+}
+.custom-border{
+    border: 1px solid #641e16;
+}
+.bg-color{
+    background-color: #fff8f5;
+}
+.logo-img {
+    width: 100%;
+    max-width: 200px; 
+    height: auto; 
+    padding-left: 3rem; 
+    mix-blend-mode: multiply; 
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        max-width: 140px; 
+        padding-left: 1rem; 
+    }
+}
+#header{
+    background: url('../img/yoga.jpg') center center/cover no-repeat;
+    height: 530px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto;
+    color: white;
+}
+.header-content{
+    position: relative;
+    z-index: 2;
+    margin-top: 12%;
+    padding-bottom: 10px;
+}
+.header-cover{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    z-index: 1;
+    top: 0; left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+.btn-main{
+    background-color: #641e16;
+    border: 1px solid #641e16;
+    color: white;
+}
+.btn-outline-light{
+    color: white;
+}
+#slideShow{
+    border: 1px solid white;
+    border-radius: 20% 2%;
+}
+.coverBG{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("../img/contact.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 190px;
+}
+.textPosition{
+    padding-top: 7%;
+    font-weight: bolder;
+    /*font-style: italic;*/
+    font-size: 27px;
+    letter-spacing: 10px;
+}
+.team-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+.team-container{
+    width: 100%; 
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 15px 0;
+}
+.teamSlide{
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 0;
+}
+.team-member{
+    flex: 0 0 33.33%; 
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.team-name{
+    margin-top: 20px;
+}
+.team-member img{
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border: 2px solid #641e16;
+    border-radius: 20px;
+}
+.arrow-btn {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #641e16;
+}
+.hide{
+    display: none;
+}
+#readMoreBtn {
+    background-color: #641e16;
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+#readMoreBtn:hover {
+    background-color: #4a1610;
+    transform: scale(1.05);
+}
+#slideShow {
+    transition: opacity 0.5s ease-in-out;
+    max-width: 300px;
+    width: auto;
+}
+@media (max-width: 992px) {
+    .team-member { flex: 0 0 50%; } /* 2 osobe na tabletu */
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        /* Pozicioniramo ga apsolutno u odnosu na nav bar */
+        position: absolute;
+        top: 100%; /* Odmah ispod headera */
+        right: 10px; /* Malo odmaknut od desne ivice */
+        
+        /* Širina - stavi koliko želiš, npr. 200px ili 'auto' */
+        width: 200px; 
+        
+        background-color: white; /* Da se ne vidi sadržaj ispod */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+        z-index: 1000; /* Da bude iznad slika i teksta */
+    }
+
+    /* Poravnanje teksta u takvom meniju */
+    .navbar-nav {
+        align-items: flex-start; /* Linkovi kreću od početka */
+    }
+}
+
+@media (max-width: 576px) {
+    .team-member { flex: 0 0 100%; } /* 1 osoba na telefonu */
+}
