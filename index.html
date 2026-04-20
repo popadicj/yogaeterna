@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Eterna</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+   <!--link za bootstrap icons-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--link za bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--link za css-->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+</head>
+<body>
+    <!--navigacija-->
+    <nav class="navbar navbar-expand-lg custom-bg text-dark shadow-sm sticky-top">
+        <div class="container-fluid">
+            <h1><a class='navbar-brand' href="index.html"><img src="assets/img/logo.jpg" class="logo-img" alt="logo" width="200px"/></a></h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <div class="navbar-nav fs-5 meni"></div>
+            </div>
+        </div>
+    </nav>
+    <!--kraj navigacije-->
+    <!--header-->
+    <div class="container-fluid" id="header">
+        <div class="header-cover"></div>
+        <div class="header-content container">
+            <h1 class="display-4 fw-bold">YOGA ETERNA</h1>
+            <p class="lead">Find peace in movement, strength in breath, and balance in every moment your path to harmony begins here.</p>
+            <a href="#class" class="btn btn-main">Explore Classes</a>
+            <a href="#about" class="btn btn-outline-light">Learn More</a>
+        </div>
+    </div>
+    <!--kraj header-a-->
+    <!--about-->
+    <div class="container-fluid" id="about">
+        <div class="row featurette pt-5 pb-5 align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="assets/img/1.jpg" alt="Exercise" id="slideShow" class="img-fluid"/>
+            </div>
+            <div class="col-md-6 align-items-center text-center p-2 pe-5">
+                <h2 class=" p-2 custome-color fw-bold">Welcome to Yoga</h2>
+                <p class="pt-3">Yoga is more than just physical exercise – it is a path to inner peace, strength, and flexibility of both body and mind. In yoga classes, you will learn how to release stress, improve posture, and boost energy through mindful breathing and controlled movements.</p>
+                <p class="pt-3" >With regular practice, you will develop balance, endurance, and mental clarity while discovering a deeper connection with yourself.</p>
+                <p class="pt-3" >Join us to find harmony and inner strength together!</p>               
+                <span class="hide" id="moreText">
+                    <p>Founded in Belgrade, Eterna was born from a desire to create a sanctuary in the middle of a busy city.</p> 
+                    <p>Our mission is to make yoga accessible to everyone, regardless of age or fitness level. 
+                    We believe that by changing the way we breathe and move, we can change the way we live our lives off the mat.</p>
+                </span>                
+                <button id="readMoreBtn" class="btn btn-main">Read more</button>
+            </div>
+        </div>
+       
+    </div>
+    <!--kraj about-->
+    <div class="container-fluid coverBG align-items-center text-center">
+        <p class="textPosition text-white fw-bold">FIND YOUR INNER BALANCE</p>
+    </div>
+    <!--class-->
+    <div class="container-fluid text-center my-4 fs-5" id="class">
+        <h2 class="m-5 custome-color fw-bold">Yoga Class Schedule</h2>
+        <div class="btn-group mb-4" role="group">
+            <button class="btn btn-dark filter-btn" data-filter="all">All Classes</button>
+            <button class="btn btn-outline-dark filter-btn" data-filter="hatha">Hatha Yoga</button>
+            <button class="btn btn-outline-dark filter-btn" data-filter="ashtanga">Ashtanga Yoga</button>
+            <button class="btn btn-outline-dark filter-btn" data-filter="vinyasa">Vinyasa Yoga</button>
+        </div>
+        <div class="row  justify-content-center text-center" id="classContainer" style="max-width:80%; margin: 0 auto;">
+            <div class="col-md-4 mb-4 class-card" data-category="hatha">
+            <div class="card">
+                <img src="assets/img/hathaYoga.jpg" class="card-img-top" alt="Hatha Yoga">
+                <div class="card-body">
+                <h5 class="card-title custome-color">Hatha Yoga</h5>
+                <p class="card-text">Instructor: Ena White</p>
+                <p><i class="bi bi-calendar p-1"></i>Mon,Wed<i class="bi bi-clock p-1"></i>09:00-10:30</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 mb-4 class-card" data-category="ashtanga">
+            <div class="card">
+                <img src="assets/img/ashtanga.jpg" class="card-img-top" alt="Ashtanga Yoga">
+                <div class="card-body">
+                <h5 class="card-title custome-color">Ashtanga Yoga</h5>
+                <p class="card-text">Instructor: Hailey Pennyworth</p>
+                <p><i class="bi bi-calendar p-1"></i>Mon,Wed<i class="bi bi-clock p-1"></i>17:00-18:30</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 mb-4 class-card" data-category="vinyasa">
+            <div class="card">
+                <img src="assets/img/vinyasa.jpg" class="card-img-top" alt="Vinyasa Yoga">
+                <div class="card-body">
+                <h5 class="card-title custome-color">Vinyasa Yoga</h5>
+                <p class="card-text">Instructor: Ana Smith</p>
+                <p><i class="bi bi-calendar p-1"></i>Tue,Thu<i class="bi bi-clock p-1"></i>09:00-10:30</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 mb-4 class-card" data-category="hatha">
+            <div class="card">
+                <img src="assets/img/hatha.jpg" class="card-img-top" alt="Hatha Yoga">
+                <div class="card-body">
+                <h5 class="card-title custome-color">Hatha Yoga</h5>
+                <p class="card-text">Instructor: Ena White</p>
+                <p><i class="bi bi-calendar p-1"></i>Tue,Thu<i class="bi bi-clock p-1"></i>17:00-18:30</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 mb-4 class-card" data-category="ashtanga">
+            <div class="card">
+                <img src="assets/img/ashtanga2.jpg" class="card-img-top" alt="Ashtanga Yoga">
+                <div class="card-body">
+                <h5 class="card-title custome-color">Ashtanga Yoga</h5>
+                <p class="card-text">Instructor: Hailey Pennyworth</p>
+                <p><i class="bi bi-calendar p-1"></i>Mon,Fri<i class="bi bi-clock p-1"></i>17:00-18:30</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 mb-4 class-card" data-category="vinyasa">
+            <div class="card">
+                <img src="assets/img/vinyasa2.jpg" class="card-img-top" alt="Vinyasa Yoga">
+                <div class="card-body">
+                <h5 class="card-title custome-color">Vinyasa Yoga</h5>
+                <p class="card-text">Instructor: Ana Smith</p>
+                <p><i class="bi bi-calendar p-1"></i>Wed,Fri<i class="bi bi-clock p-1"></i>09:00-10:30</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--kraj class-->
+    <!--team-->
+    <div class="container-fluid bg-color" id="team">
+        <h2 class="text-center fw-bold custome-color pb-5 pt-5">Our Yoga Instructor</h2>
+        
+        <div class="team-wrapper d-flex justify-content-center align-items-center">
+            
+            <button id="btnPrevious" class="arrow-btn"><i class="bi bi-arrow-left-circle-fill"></i></button>
+            
+            <div class="team-container overflow-hidden">
+                <div class="teamSlide" id="teamSlide"></div>
+            </div>
+
+            <button id="btnNext" class="arrow-btn"><i class="bi bi-arrow-right-circle-fill"></i></button>
+        </div>
+    </div>
+    <!--kraj team-->
+    <!--contact-->
+    <div class="container" id="contact">
+        <h2 class="fw-bold text-center custome-color pb-3">Contact us</h2>
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col-lg-6 col-sm-11 mx-auto">
+                <form action="index.php" method="post" id="form">
+                    <div class="row my-3">
+                        <div class="col-6">
+                            <label for="tbFirstName" class="custome-color fw-bold">First Name</label><br/>
+                            <input type="text" id="tbFirstName" class="form-control custom-border"/>
+                            <p class="error hide small"></p>
+                        </div>
+                        <div class="col-6">
+                            <label for="tbLastName" class="custome-color fw-bold">Last Name</label><br/>
+                            <input type="text" id="tbLastName" class="form-control custom-border"/>
+                            <p class="error hide small"></p>
+                        </div>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="tbEmail" class="custome-color fw-bold">Email</label><br/>
+                        <input type="email" id="tbEmail" class="form-control custome-color custom-border"/>
+                        <p class="error hide small"></p>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="tbAge" class="custome-color fw-bold">Select the year of birth</label><br/>
+                        <select id="tbAge" class="form-control custom-border"></select>
+                        <p class="error hide small"></p>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label class="custome-color fw-bold">Select gender</label><br/>
+                        <input type="radio" name="btnGender" value="M" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" class="custom-border" name="btnGender" value="F" id="female">
+                        <label for="female">Female</label>
+                        <p class="error hide small"></p>
+                    </div>
+                    <div class="col-12 my-3">
+                        <label for="tbNote" class="custome-color fw-bold">Note</label><br/>
+                        <textarea id="tbNote" class="form-control custom-border"></textarea>
+                        <p class="error hide small"></p>
+                    </div>
+                    <div class="col-12 m-3 p-2 align-items-center text-center">
+                        <input type="button" class="btn btn-main" id="btnSubmit" value="Submit">
+                        <p class="error hide small"></p>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 col-sm-11 mx-auto">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-11 text-center">
+                        <h5 class="br-main custome-color fw-bold">Work Time</h5>
+                        <p class="mb-0">Monday-Friday: 9am - 5pm</p>
+                        <p>Saturday-Sunday: 9am - 1pm</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-4">
+                    <div class="col-11 text-center">
+                        <h5 class="br-main custome-color fw-bold">Address</h5>
+                        <p class="mb-0">Zdravka Čelara 16, Serbia</p>
+                        <p>Belgrade, 11102</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center  mb-4">
+                    <div class="col-11 text-center br-h-10">
+                        <h5 class="br-main custome-color fw-bold">Contact Info</h5>
+                        <p class="mb-0">Phone: 013 861 227</p>
+                        <p>E-mail: eterna&#64;gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!--footer-->
+    <footer class="container-fluid pt-5 border-top bg-color" id="footer">
+    <div class="container">
+        <div class="row gy-4">
+            <div class="col-md-4 text-center text-md-start">
+                <img src="assets/img/logo.jpg" alt="logo" class="footer-logo mb-3 logo-img">
+                <p class="text-muted small">Find peace in movement, strength in breath, and balance in every moment. Your path to harmony begins here.</p>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <h5 class="mb-3 fw-bold custome-color">Contact us!</h5>
+                    <p class="text-muted small mb-1"><i class="bi bi-geo-alt me-2"></i> Belgrade, Serbia</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-envelope me-2"></i> info@yogaeterna.com</p>
+                    <p class="text-muted small mb-1"><i class="bi bi-telephone me-2"></i> +381 60 123 4567</p>
+                    <p class="text-muted small mb-1"><a href="https://www.facebook.com" target="_blank" class="text-dark"><i class="bi bi-facebook"></i> Yoga Eterna</a></p>
+                    <p class="text-muted small"><a href="https://www.instagram.com" target="_blank" class="text-dark"><i class="bi bi-instagram"></i> yoga_eterna</a></p>
+            </div>
+
+            <div class="col-md-4 text-center text-md-end">
+                <h5 class="mb-3 fw-bold custome-color text-center">Quick links!</h5>
+                <div class="meni footer-links d-flex flex-column gap-2 text-center"></div>
+            </div>
+        </div>
+        
+        <div class="row mt-2">
+            <div class="col-12 text-center">
+                <hr>
+                <p class="text-muted small">&copy; 2026 Eterna Yoga Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <!--kraj footer-a-->
+    
+    
+
+    <!--link za jquery-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--link za js-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
